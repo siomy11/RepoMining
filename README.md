@@ -1,30 +1,31 @@
-## Welcome to GitHub Pages
+| Project Name | Repository and Mining of Temporal Data |
+| --- |
+| :---: | :---: |
+| Team Members and Email Addresses | Jessica Nguy jnguy2014@my.fit.edu
+ Siomara Nieves snieves2014@my.fit.edu |
+| --- | 
+| Faculty Sponsor | Philip Chan |
+| --- | 
 
-You can use the [editor on GitHub](https://github.com/jlnguy/RepoMining/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### First Semester 
+| Plan (Sept 6) | [Plan](), [Presentation]() |
+| --- |
+| Milestone 1 (Oct 2) | [Requirement](), [Design](), [Test](), [Presentation](), [Progress Evaluation]() |
+| --- |
+| Milestone 2 (Oct 30) | [Presentation](), [Progress Evaluation]() |
+| --- |
+| Milestone 3 (Nov 27) | [Presentation](), [Progress Evaluation]() |
+| --- |
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+### Second Semester
+| Plan (Jan 18) | [Plan](), [Presentation]() |
+| --- |
+| Milestone 4 (Feb 13) | [Presentation](), [Progress Evaluation]() |
+| --- |
+| Milestone 5 (Mar 20) | [Poster](), [Presentation](), [Progress Evaluation]() |
+| --- |
+| Milestone 6 (Apr 17) | [User Manual](), [Demo Video](), [Presentation](), [Progress Evaluation]() |
+| --- |
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
