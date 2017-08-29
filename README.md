@@ -1,7 +1,8 @@
+|  |  |
 | :---: | :---: |
 | Project Name | Repository and Mining of Temporal Data |
-| Team Members and Email Addresses | Jessica Nguy jnguy2014@my.fit.edu |
-|  | Siomara Nieves snieves2014@my.fit.edu |
+| Team Members and Email Addresses | Jessica Nguy jnguy2014@my.fit.edu 
+Siomara Nieves snieves2014@my.fit.edu |
 | Faculty Sponsor | Philip Chan |
 
 ### First Semester 
