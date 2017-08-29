@@ -5,7 +5,8 @@
 | Faculty Sponsor | Dr. Philip Chan |
 
 
-
+###   
+###   
 
 ### First Semester 
 
@@ -17,7 +18,8 @@
 | Milestone 3 (Nov 27) | [Presentation](), [Progress Evaluation]() |
 
 
-
+###   
+###     
 
 ### Second Semester
 
@@ -29,7 +31,8 @@
 | Milestone 6 (Apr 17) | [User Manual](), [Demo Video](), [Presentation](), [Progress Evaluation]() |
 
 
-
+###   
+###   
 
 ---
 
