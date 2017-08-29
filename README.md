@@ -2,7 +2,7 @@
 | :---: | :---: |
 | Project Name | Repository and Mining of Temporal Data |
 | Team Members and Email Addresses | Jessica Nguy jnguy2014@my.fit.edu <br/> Siomara Nieves snieves2014@my.fit.edu |
-| Faculty Sponsor | Philip Chan |
+| Faculty Sponsor | Dr. Philip Chan |
 
 
 
@@ -30,6 +30,8 @@
 
 
 
+
+---
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
