@@ -1,4 +1,4 @@
-#### Senior Design - Computer Science
+## Senior Design - Computer Science
 
 |  |  |
 | :---: | :---: |
