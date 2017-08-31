@@ -1,4 +1,7 @@
+
 ##### Senior Design - Computer Science
+
+
 |  |  |
 | :---: | :---: |
 | Project Name | Repository and Mining of Temporal Data |
