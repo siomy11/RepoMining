@@ -4,7 +4,8 @@
 | Team Members and Email Addresses | Jessica Nguy     jnguy2014@my.fit.edu <br/> Siomara Nieves     snieves2014@my.fit.edu |
 | Faculty Sponsor | Dr. Philip Chan     pkc@fit.edu |
 |  |  |
-<br/>
+
+
 
 ### First Semester 
 
@@ -15,7 +16,8 @@
 | Milestone 2 (Oct 30) | [Presentation](), [Progress Evaluation]() |
 | Milestone 3 (Nov 27) | [Presentation](), [Progress Evaluation]() |
 |  |  |
-<br/>
+
+
 
 ### Second Semester
 
@@ -26,6 +28,7 @@
 | Milestone 5 (Mar 20) | [Poster](), [Presentation](), [Progress Evaluation]() |
 | Milestone 6 (Apr 17) | [User Manual](), [Demo Video](), [Presentation](), [Progress Evaluation]() |
 |  |  |
-<br/>
+
+
 
 ***
