@@ -13,7 +13,7 @@
 
 |  |  |
 | :---: | :---: |
-| Plan (Sept 6) | [Plan](https://jlnguy.github.io/RepoMining/seniorDesignDocs/Project%20Plan.pdf), [Presentation](https://jlnguy.github.io/RepoMining/seniorDesignDocs/Project%20Plan%20Presentation.pdf) |
+| Plan (Sept 6) | [Plan](https://jlnguy.github.io/RepoMining/seniorDesignDocs/Project%20Plan.pdf), [Presentation](https://jlnguy.github.io/RepoMining/seniorDesignDocs/Project%20Plan%20Presentation.pdf) | 
 | Milestone 1 (Oct 2) | [Requirement](), [Design](), [Test](), [Presentation](), [Progress Evaluation]() |
 | Milestone 2 (Oct 30) | [Presentation](), [Progress Evaluation]() |
 | Milestone 3 (Nov 27) | [Presentation](), [Progress Evaluation]() |
