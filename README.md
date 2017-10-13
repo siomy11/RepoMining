@@ -1,4 +1,5 @@
-## Senior Design - Computer Science
+## RepoMining - Repository and Mining of Temporal Data
+# Senior Design - Computer Science
 
 |  |  |
 | :---: | :---: |
