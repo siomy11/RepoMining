@@ -1,8 +1,9 @@
 import csv
 import scipy
 import numpy as np
-import plotly as py
-import plotly.graph_objs as go
+from plotly.offline import download_plotlyjs, init_notebook_mode,  plot
+from plotly.graph_objs import *
+init_notebook_mode()
 
 #things to do
 
@@ -60,6 +61,13 @@ with open('test.csv') as csvfile: #for now just reading it from my computer
         )
         
         data = [trace]
+        layout = Layout(
+                showlegend=False,
+                height=600,
+                width=600,
+                )
+        fig = dict( data=data, layout=layout )
+        plot(fig)  #a graph, just testing
         
 
     else:
