@@ -1,0 +1,143 @@
+# Question 1
+# ----------
+# Graphs Time versus Value as initial graph
+# Graphs Time versus Delta-Value
+# Graphs Time versus z-score of Value
+
+# To Do:
+# Dynamically allocate Fig 3 and Fig 4 y-axis range
+# Implement zoom-in function for certain ranges
+# Fix Fig 2 - 4 display options for x-axis.
+
+
+import numpy as np
+import math
+import matplotlib.dates as dt
+from scipy import stats
+from datetime import datetime
+from test3 import read_file
+import plotly.plotly 
+import plotly.graph_objs as go
+plotly.offline.init_notebook_mode()
+
+    # -infinity < f <= -3.0     = Red
+    # -3.0 <= f <= -2.5         = Yellow
+    # -2.5 <= f <= 2.5          = Green
+    # 2.5 <= f <= 3.0           = Yellow
+    # 3.0 <= f < infinity       = Red
+
+
+# ------------- Part i -------------
+# |                                |
+# |  Convert csv file to readable  |
+# |  format for x-axis and y-axis  |
+# |                                |
+# ----------------------------------
+
+# Takes in csv file for x-axis and y-axis from csvReader
+
+yaxisI, xaxisI = read_file()
+
+xTitle = xaxisI.pop(0)
+yTitle = yaxisI.pop(0)
+
+#Convert list of strings to datetime objects
+xaxis_datetime = []
+for x in xaxisI:
+    xaxis_datetime.append(datetime.strptime(x, '%m/%d/%Y'))
+    # Add an option to determine which x-data is getting put in; currently the only input that this accepts is month/day/time.
+    # Future additions: Be able to parse month-day-year; year-month-day; year/month/day; hour:minute:second
+    # (x, '%m-%d-%Y); (x, %Y-%m-%d); (x, %Y/%m/%d); (x, hourminutesecondhere)
+    
+#Convert datetime objects to numbers for ploting
+xaxis = []
+for y in xaxis_datetime:
+    xaxis.append(dt.date2num(y))
+
+# Convert list to ints
+yaxis = list(map(float, yaxisI))
+
+
+# ------------- Part 1 -------------
+# |                                |
+# | Graph x-values versus y-values |
+# |                                |
+# ----------------------------------
+titleString = "Q1: Time versus " + yTitle
+
+#Graph plot
+trace0 = go.Scatter(
+        x = xaxis_datetime,
+        y = yaxis,
+        line = dict(
+                color = ('rgb(205,12,24)'),
+                width = 2
+                ) 
+        )
+        
+data = [trace0]
+layout = dict(
+        title = titleString,
+        xaxis = dict(title = xTitle),
+        yaxis = dict(title = yTitle),
+        )
+
+fig = dict(data = data, layout = layout)
+plotly.offline.plot(fig, filename = 'fig1')
+        
+
+# ------------- Part 2 -------------
+# |                                |
+# | Graph the change in x-values   |
+# | Calculate z-scores for dataset |
+# |        Color-Code Range        |
+# |                                |
+# ----------------------------------
+
+negInf = -math.inf
+posInf = math.inf
+deltaY = []
+counter = 1
+
+while counter < len(yaxis):         # Find x_c = x_t - x_(t-1)
+    changeIn = yaxis[counter] - yaxis[counter - 1]
+    deltaY.append(changeIn)
+    counter = counter + 1
+    
+deltaX = []                         # Create a new array for xAxis
+for item in xaxis_datetime:
+    deltaX.append(item)
+deltaX.pop()                        # Remove the first item
+
+yAxisTitle = "Change in " + yTitle  # Create the new y-axis title
+titlePrtTwo = "Q1: Time versus " + yAxisTitle
+
+meanY = np.mean(deltaY)
+stdDevY = np.std(deltaY)
+
+topRangeZ = (meanY + (3.0 * stdDevY))
+highRangeZ = (meanY + (2.5 * stdDevY))
+zeroRangeZ = (meanY + (0 * stdDevY))
+lowRangeZ = (meanY + (-2.5 * stdDevY))
+bottomRangeZ = (meanY + (-3.0 * stdDevY))
+
+trace1 = go.Scatter(
+        x = deltaX,
+        y = deltaY,
+        line = dict(
+                color = ('rgb(205,12,24)'),
+                width = 2
+                ) 
+        )
+        
+data1 = [trace1]
+layout1 = dict(
+        title = titlePrtTwo,
+        xaxis = dict(title = xTitle),
+        yaxis = dict(title = yAxisTitle),
+        )
+
+fig2 = dict(data = data1, layout = layout1)
+plotly.offline.plot(fig2, filename = 'fig2')
+
+
